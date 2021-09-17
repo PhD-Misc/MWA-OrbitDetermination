@@ -19,7 +19,9 @@ The output of satSearch.py
 
 ![output](https://github.com/PhD-Misc/MWASSA/blob/master/image1.gif)
 
-In above animation, the blue contours are all the 6 sigma events detected by RFISeeker. 
+In above animation, the blue contours are all the 6 sigma events detected by RFISeeker. SatSearch.py does an API query for the epoch to identify all 
+the objects within the FOV of the observation, followed by a cone search for the event (with 7km positional error)
+ 
 
 
 
