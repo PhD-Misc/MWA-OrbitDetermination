@@ -26,7 +26,20 @@ the objects within the FOV of the observation, followed by a cone search for the
 
 extractAngularMeasurements.py extracts the angular position measurements by trying to extract the mid-point of the streak (more info in paper)
 
-This steps creates a file 
+This steps writes to disk the following information to disk (x(pixel), x_err, y(pixel), y_err, RA, RA_err, DEC, DEC_err, UTC, time-step). 
+
+## Step 3 Create config file with intial guess and boundary conditions for orbit determinaiton
+
+This step, looks at historically published TLE for the object, and uses the most recent past TLE as the intial guess. It also generates boundary condition
+for each orbital element by inspecting the historic evolution of the TLE of the object. 
+
+## Step 4 Orbit Determination
+
+Inputs the config file created in step 3 and the angular position measurements obtained in step 2 to perform orbit fit to the satellite pass. The script also writes to disk the estimated orbital elements (along with uncertainities) for the object at the epoch of measurement.
+
+
+
+
 
  
 
