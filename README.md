@@ -19,7 +19,7 @@ The output of satSearch.py
 
 ![output](https://github.com/PhD-Misc/MWASSA/blob/master/image1.gif)
 
-
+In above animation, the blue contours are all the 6 sigma events detected by RFISeeker. 
 
 
 
