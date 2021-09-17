@@ -45,10 +45,18 @@ This steps writes to disk the following information to disk (x(pixel), x_err, y(
 
 ## Step 3 Create config file with intial guess and boundary conditions for orbit determinaiton
 
+```
+python createConfig.py --noradid 20580 --wcsFile testData/6Sigma1FloodfillSigmaRFIBinaryMap-t0000.fits --debug True --user ${spaceTrackUser} --passwd ${spaceTrackPassword}
+```
+
 This step, looks at historically published TLE for the object, and uses the most recent past TLE as the intial guess. It also generates boundary condition
 for each orbital element by inspecting the historic evolution of the TLE of the object. 
 
 ## Step 4 Orbit Determination
+
+```
+python orbitFit.py --obs 1157468632 --norad 20580 --config auto_created_config20580.yaml --wcsFile testData/6Sigma1FloodfillSigmaRFIBinaryMap-t0000.fits --debug True
+```
 
 Inputs the config file created in step 3 and the angular position measurements obtained in step 2 to perform orbit fit to the satellite pass. The script also writes to disk the estimated orbital elements (along with uncertainities) for the object at the epoch of measurement.
 
