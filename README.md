@@ -60,7 +60,8 @@ python orbitFit.py --obs 1157468632 --norad 20580 --config auto_created_config20
 
 Inputs the config file created in step 3 and the angular position measurements obtained in step 2 to perform orbit fit to the satellite pass. The script also writes to disk the estimated orbital elements (along with uncertainities) for the object at the epoch of measurement.
 
-
+Once, the orbitFit.py has sucessfully run, it will generate a file called 1157468632n20580.txt (of the format ${observationID}n${noradID}.txt) that contains the 
+determined orbital elements and its accoiated errors.
 
 
 
