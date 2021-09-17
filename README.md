@@ -20,7 +20,14 @@ The output of satSearch.py
 ![output](https://github.com/PhD-Misc/MWASSA/blob/master/image1.gif)
 
 In above animation, the blue contours are all the 6 sigma events detected by RFISeeker. SatSearch.py does an API query for the epoch to identify all 
-the objects within the FOV of the observation, followed by a cone search for the event (with 7km positional error)
+the objects within the FOV of the observation, followed by a cone search for the event (with 7km positional error). In the above animation, the search cone is green if the event is detected by the script, else red. The detected events (along with other required information) are saved to disk for further analysis.
+
+## Step 2 Extraction of angular position measurements of the pass
+
+extractAngularMeasurements.py extracts the angular position measurements by trying to extract the mid-point of the streak (more info in paper)
+
+This steps creates a file 
+
  
 
 
