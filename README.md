@@ -17,7 +17,7 @@ More information on how RFISeeker works can be found [Prabu et al 2020b](https:/
 
 The output of satSearch.py 
 
-![output](https://github.com/PhD-Misc/shift-stack-analysis/blob/main/detectionGifs/1157384272obs40261norad.gif)
+![output](https://github.com/PhD-Misc/MWASSA/blob/master/image1.gif)
 
 
 
