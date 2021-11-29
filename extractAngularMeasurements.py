@@ -501,17 +501,6 @@ def XY2RADEC(x,y, xerr, yerr):
     world = wcs.wcs_pix2world(pixcrd, 0)
     ra, dec = world[1]
 
-    ## wrap values to be between 0 and 360
-    if ra < 0:
-        ra += 360
-    elif ra > 360:
-        ra -= 360
-    
-    if dec < 0:
-        dec += 360
-    elif dec > 360:
-        dec -= 360
-
     ## calculate errors
     pixcrd1 = np.array([[0 ,0 ],[x+xerr, y+yerr]], dtype=np.float64)
     world1 = wcs.wcs_pix2world(pixcrd1, 0)
