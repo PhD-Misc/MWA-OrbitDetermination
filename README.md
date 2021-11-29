@@ -20,7 +20,7 @@ To run the demo pipeline,
 ./demoPipeline.sh -u ${spaceTrackUser} -p ${spaceTrackPassword}
 ```
 
-The python modules required by the demo pipeline can be obtained from the [docker image](https://hub.docker.com/layers/steveprabu/mypython/second/images/sha256-412b04389dabd0d668102da0f076e6085263d4e25ba5fad0b5f6abdcd4fbb5ca?context=repo) (alternatively, the required python modules with appropriate versions can be installed using the requirements.txt file provided using syntax ```pip install -r requirements.txt```)
+The python modules required by the demo pipeline can be obtained from the [docker image](https://hub.docker.com/layers/steveprabu/mypython/third/images/sha256-5eb89839a5b79fde4410cdf6f14e864f69819959b0c708b62267ddc344a5892f?context=repo) (alternatively, the required python modules with appropriate versions can be installed using the requirements.txt file provided using syntax ```pip install -r requirements.txt```)
 
 The steps performed by the demo pipeline is explain below.
 
